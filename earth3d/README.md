@@ -4,12 +4,12 @@ EARTH3D
 
 Screenshot
 ==========
-![Image of Yaktocat](https://github.com/vboluda/3d-lab/tree/master/earth3d/example/resources/Screenshot.jpg)
+![Screenshot](https://github.com/vboluda/3d-lab/blob/master/graph3d/example/resources/Screenshot.jpg)
 
 Example
 =======
-* [DEMO](https://htmlpreview.github.io/?https://github.com/vboluda/3d-lab/tree/master/earth3d/example/example.html "Graph3D demo")
-* [SOURCE](https://github.com/vboluda/3d-lab/tree/master/earth3d/lib/Graph3D.js "Graph3D source")
+* [DEMO](https://htmlpreview.github.io/?https://github.com/vboluda/3d-lab/blob/master/earth3d/example/example.html "EARTH3D demo")
+* [SOURCE](https://github.com/vboluda/3d-lab/blob/master/earth3d/lib/earth3d.js "Graph3D source")
 
 
 Usage
@@ -69,7 +69,7 @@ document.body.addEventListener('mouseup', onMouseUp, false);
 document.body.addEventListener('dblclick', onMouseDblClk, false);
 ```
 
-[See complete example](https://github.com/vboluda/3d-lab/tree/master/earth3d/example/example.html "Graph3D example")
+[See complete example](https://github.com/vboluda/3d-lab/blob/master/earth3d/example/example.html "Graph3D example")
 
 License
 ========

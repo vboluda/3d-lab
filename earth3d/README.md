@@ -4,7 +4,7 @@ EARTH3D
 
 Screenshot
 ==========
-![Screenshot](https://github.com/vboluda/3d-lab/blob/master/graph3d/example/resources/Screenshot.jpg)
+![Screenshot](https://github.com/vboluda/3d-lab/blob/master/earth3d/example/resources/Screenshot.jpg)
 
 Example
 =======

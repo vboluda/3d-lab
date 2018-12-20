@@ -1,10 +1,10 @@
-Graph3D
+Graph3D-
 =======
 3D Graphical visualization based on [Threejs](https://threejs.org/ "Threejs link")
 
 Screenshot
 ==========
-![Image of Yaktocat](https://github.com/vboluda/graph3d/blob/master/example/resources/Screenshot.jpg)
+![Image of Yaktocat](https://github.com/vboluda/3d-lab/tree/master/graph3d/example/resources/Screenshot.jpg)
 
 Example
 =======

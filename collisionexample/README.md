@@ -4,15 +4,15 @@ COLLISION EXAMPLE
 
 Screenshot
 ==========
-![Screenshot](https://github.com/vboluda/collisionexample/blob/master/resources/Screenshot.jpg)
+![Screenshot](https://github.com/vboluda/3d-lab/blob/master/collisionexample/resources/Screenshot.jpg)
 
 Example
 =======
-* [DEMO SMALL LOAD (250 elements)](https://htmlpreview.github.io/?https://github.com/vboluda/collisionexample/blob/master/example.html#250 "Collision demo")
-* [DEMO MEDIUM LOAD (500 elements)](https://htmlpreview.github.io/?https://github.com/vboluda/collisionexample/blob/master/example.html#500 "Collision demo")
-* [DEMO HEAVY LOAD (1000 elements)](https://htmlpreview.github.io/?https://github.com/vboluda/collisionexample/blob/master/example.html#1000 "Collision demo")
+* [DEMO SMALL LOAD (250 elements)](https://github.com/vboluda/3d-lab/blob/master/collisionexample/example.html#250 "Collision demo")
+* [DEMO MEDIUM LOAD (500 elements)](https://github.com/vboluda/3d-lab/blob/master/collisionexample/example.html#500 "Collision demo")
+* [DEMO HEAVY LOAD (1000 elements)](https://github.com/vboluda/3d-lab/blob/master/collisionexample/example.html#1000 "Collision demo")
 
-[SOURCE](https://github.com/vboluda/collisionexample/blob/master/js/collisionDemo.js "Collision demo source")
+[SOURCE](https://github.com/vboluda/3d-lab/blob/master/collisionexample/js/collisionDemo.js "Collision demo source")
 
 License
 ========

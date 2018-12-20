@@ -8,8 +8,8 @@ Screenshot
 
 Example
 =======
-* [DEMO](https://htmlpreview.github.io/?https://github.com/vboluda/graph3d/blob/master/example/example.html "Graph3D demo")
-* [SOURCE](https://github.com/vboluda/graph3d/blob/master/lib/Graph3D.js "Graph3D source")
+* [DEMO](https://htmlpreview.github.io/?https://github.com/vboluda/3d-lab/tree/master/graph3d/example/example.html "Graph3D demo")
+* [SOURCE](https://github.com/vboluda/3d-lab/tree/master/graph3d/lib "Graph3D source")
 
 
 Usage
@@ -69,7 +69,7 @@ document.body.addEventListener('mouseup', onMouseUp, false);
 document.body.addEventListener('dblclick', onMouseDblClk, false);
 ```
 
-[See complete example](https://github.com/vboluda/graph3d/blob/master/example/example.html "Graph3D example")
+[See complete example](https://github.com/vboluda/3d-lab/tree/master/graph3d/example "Graph3D example")
 
 License
 ========

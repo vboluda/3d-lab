@@ -1,0 +1,40 @@
+<html dir="ltr"><head>
+        <title>Collision example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var element = document.body;
+        </script>
+        <script src="js/vendor/three.js" type="text/javascript"></script>
+        <script src="js/vendor/TrackballControls.js" type="text/javascript"></script>
+        <script src="js/vendor/navigation.js" type="text/javascript"></script>
+        <script src="js/vendor/Oimo.js" type="text/javascript"></script>
+        <script src="js/vendor/threex.oimo.js" type="text/javascript"></script>
+        <script src="js/collisionDemo.js" type="text/javascript"></script>
+        <script src="resources/utils.js" type="text/javascript"></script>
+         <link href="resources/dialog.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+         <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img class="img" src="resources/Instructions.jpg" alt="isntructions"/>
+            </div>
+        </div>
+        <script>
+            var url_string = window.location.href;
+            var indx=url_string.indexOf("#");
+            var balls=1000;        
+            if((indx>-1) || (indx+1>=url_string.length)){
+                balls=url_string.substr(indx+1, url_string.length);
+            }
+            init(document.body,balls);
+            
+            
+            var dialog=new controlDialog();
+            dialog.whenClose=function(){
+               animate();
+            }
+            dialog.show();
+        </script>
+    </body></html>

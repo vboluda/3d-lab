@@ -1,0 +1,10 @@
+{
+    "titles":["title1","title 2","title3","title 4","Title 5"],
+    "series":{
+        "serie 1":[0,1,1,1,1],
+        "serie 2":[2,11,43,12,12],
+        "serie 3":[12,21,23,22,22],
+        "serie 4":[42,41,43,42,42]   
+    },
+    "opts":{"dummy":"not used"}
+}

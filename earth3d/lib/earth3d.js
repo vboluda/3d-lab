@@ -260,7 +260,7 @@ function GeoPosition(opts) {
         sphereMaterial.map = THREE.ImageUtils.loadTexture(this.texture)
         this.earth = new THREE.Mesh(sphereGeometry, sphereMaterial);
         this.earth.position.set(0, 0, 0);
-        earth.rotation=Math.PI;
+        this.earth.rotation=Math.PI;
         this.earth.rotation.y = 2 * Math.PI;
         this.scene.add(this.earth);
     }

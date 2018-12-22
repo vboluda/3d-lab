@@ -16,7 +16,7 @@ Usage
 =====
 * First, instance graph3D object
 ```
-var spr = new GeoPosition({
+var spr = new GeoPosition({ 
                 domElement: element,
                 showStats: true,
                 texture:'resources/world_black.jpg',

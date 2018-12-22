@@ -258,7 +258,7 @@ function GeoPosition(opts) {
         var sphereGeometry = new THREE.SphereGeometry(50, 64, 32),
                 sphereMaterial = new THREE.MeshLambertMaterial({color: 0x8888ff});
         console.log("Loading texture: "+this.texture);
-        sphereMaterial.map = THREE.ImageUtils.loadTexture(this.texture)
+        //sphereMaterial.map = THREE.ImageUtils.loadTexture(this.texture)
         console.log("Texture loaded: ");
         this.earth = new THREE.Mesh(sphereGeometry, sphereMaterial);
         this.earth.position.set(0, 0, 0);

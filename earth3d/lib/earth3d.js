@@ -12,7 +12,7 @@ function GeoPosition(opts) {
     opts = opts || {};
     console.log("opts: "+opts);
     //this.texture = opts.texture || 'resources/world_black.jpg';
-    this.texture = opts.texture || 'https://raw.githubusercontent.com/vboluda/3d-lab/master/earth3d/example/resources/world_black.jpg'
+    this.texture = opts.texture || 'resources/world_black.jpg'
     this.color = opts.color || function (mag) {
         return 0xFF9900;// + Math.random() * 128
     };

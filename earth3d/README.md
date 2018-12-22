@@ -8,7 +8,7 @@ Screenshot
 
 Example
 =======
-* [DEMO](https://htmlpreview.github.io/?https://github.com/vboluda/3d-lab/blob/master/earth3d/example/example.html "EARTH3D demo")
+* [DEMO](https://vboluda.github.io/earth3d/example/example.html "EARTH3D demo")
 * [SOURCE](https://github.com/vboluda/3d-lab/blob/master/earth3d/lib/earth3d.js "Graph3D source")
 
 

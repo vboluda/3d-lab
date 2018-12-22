@@ -5,11 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch localhost",
             "type": "chrome",
             "request": "launch",
-            "name": "Lanzar Chrome contra localhost",
-            "url": "http://localhost:8080/",
-            "webRoot": "${workspaceFolder}"
+            "url": "http://localhost/mypage.html",
+            "webRoot": "${workspaceFolder}/wwwroot"
+        },
+        {
+            "name": "Launch earth3d-example",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/example/example.html"
         }
     ]
 }

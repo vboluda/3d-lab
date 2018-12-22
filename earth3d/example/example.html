@@ -9,8 +9,16 @@
         <script src="vendor/tween.min.js" type="text/javascript"></script>
         <script src="vendor/stats.min.js" type="text/javascript"></script>
         <script src="../lib/earth3d.js" type="text/javascript"></script>
+        <script src="resources/utils.js" type="text/javascript"></script>
+        <link href="resources/dialog.css" rel="stylesheet" type="text/css"/>
     </head>
     <body contenteditable="true">
+            <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img class="img" src="resources/Instructions.jpg" alt="isntructions"/>
+                    </div>
+                </div>
         <script>
             //var element = document.getElementById("ThreeJS");
             var element=document.body;
@@ -23,7 +31,6 @@
                             var rawdata = JSON.parse(xhr.responseText);
                             var data = rawdata;
                             spr.init(data);
-                            animate();
                         }
                     } else {
                     }
@@ -139,7 +146,7 @@
             var spr = new GeoPosition({
                 domElement: element,
                 showStats: true,
-                texture:'https://raw.githubusercontent.com/vboluda/3d-lab/master/earth3d/example/resources/world_black.jpg',
+                texture:'resources/world_black.jpg',
                 onSelectBox: function (item) {
                     var canvas = makeTextSprite([
                         'IP: ' + item.ip,
@@ -159,7 +166,14 @@
             retrieveData();
 //            window.addEventListener('resize', onWindowResize, false);
 //            window.addEventListener('mousemove', onMouseMove, false);
-            element.addEventListener('resize', onWindowResize, false);
-            element.addEventListener('mousemove', onMouseMove, false);
+           
+            var dialog=new controlDialog();
+            dialog.whenClose=function(){
+                var element = document.body;
+                element.addEventListener('resize', onWindowResize, false);
+                element.addEventListener('mousemove', onMouseMove, false);
+                animate();
+            }
+            dialog.show();
         </script>
     </body></html>

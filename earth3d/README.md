@@ -14,7 +14,7 @@ Example
 
 Usage
 =====
-* First, instance graph3D object
+* First, instance Earth3d object
 ```
 var spr = new GeoPosition({ 
                 domElement: element,

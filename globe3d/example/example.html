@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EARTH 3D</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="Generator" content="https://github.com/callumprentice/ThreeJsAppTemplate">
+        <style type="text/css">
+            body { margin: 0; overflow: hidden; }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript" src="js/vendor/three.js"></script>
+        <script type="text/javascript" src="js/vendor/Detector.js"></script>
+        <script type="text/javascript" src="js/vendor/TrackballControls.js"></script>
+        <script type="text/javascript" src="js/vendor/Projector.js"></script>
+        <script type="text/javascript" src="js/TextLabel.js"></script>
+        <script type="text/javascript" src="js/world.geo.json/countries.geo.js"></script>
+        <script src="../lib/Globe3d.js" type="text/javascript"></script>
+        <script src="js/G3Helper.js" type="text/javascript"></script>
+        <script src="resources/utils.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var globe = new Globe3d({
+                onSelectBox:function(dataprovider,px,py){
+                    return showLabel(dataprovider,px,py);
+                }
+            });
+            function retrieveData() {
+                xhr = new XMLHttpRequest();
+                xhr.open('GET', 'data/GDBData.json', true);
+                xhr.onreadystatechange = function (e) {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            var rawdata = JSON.parse(xhr.responseText);
+                            var data = rawdata;
+                            globe.init(data);
+                            animate();
+                        }
+                    } else {
+                    }
+                };
+                xhr.send(null);
+            }
+            ;
+            retrieveData();
+            window.addEventListener('resize', function (event) {
+                globe.onWindowResize(event, globe)
+            }, false);
+            window.addEventListener('mousemove', function (event) {
+                globe.onMouseMove(event, globe)
+            }, false);
+
+            
+
+            function animate() {
+                requestAnimationFrame(animate);
+                globe.render();
+            }
+        </script>
+    </body>
+</html>

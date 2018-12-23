@@ -14,59 +14,33 @@ Example
 
 Usage
 =====
-* First, instance graph3D object
+* First, instance Globe3d object
 ```
-var gr = new Graph3D({
-    showStats: true,
-    domElement: document.body,
-    showdata:function(dataProvider){
-        return showText([
-                'Serie: ' + dataProvider.serie, //Example. Use your own dataprovider
-                'Value: ' + dataProvider.mag //Example. Use your own dataprovider
-            ], {fontsize: 12,
-                borderThickness: 2,
-                borderColor: {r: 130, g: 94, b: 53, a: 1},
-                backgroundColor: {r: 240, g: 182, b: 116, a: 0.7},
-                textColor: {r: 130, g: 94, b: 53, a: 1}
-            });
-    }});
+var globe = new Globe3d({
+    onSelectBox:function(dataprovider,px,py){
+        return showLabel(dataprovider,px,py);
+    }
+});
 ```
 
 * Initialize with data
 ```
- gr.init(data);
+  globe.init(data);
 ```
 
 * Create auxiliary functions and events
 ```
 function animate() {
     requestAnimationFrame(animate);
-    gr.render();
-    gr.update();
+    globe.render();
 }
 
-function onWindowResize(event) {
-    gr.onWindowResize(event);
-}
-
-function onMouseMove(event) {
-    gr.onMouseMove(event);
-}
-
-function onMouseDown(event) {
-    gr.onMouseDown(event);
-}
- function onMouseUp(event) {
-    gr.onMouseUp(event);
-}
-function onMouseDblClk(event) {
-    gr.onMouseDblClk(event);
-}
-document.body.addEventListener('resize', onWindowResize, false);
-document.body.addEventListener('mousemove', onMouseMove, false);
-document.body.addEventListener('mousedown', onMouseDown, false);
-document.body.addEventListener('mouseup', onMouseUp, false);
-document.body.addEventListener('dblclick', onMouseDblClk, false);
+ window.addEventListener('resize', function (event) {
+    globe.onWindowResize(event, globe)
+}, false);
+window.addEventListener('mousemove', function (event) {
+    globe.onMouseMove(event, globe)
+}, false);
 ```
 
 [See complete example](https://github.com/vboluda/3d-lab/tree/master/globe3d/example/example.html "Globe3d example")

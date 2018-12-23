@@ -69,7 +69,7 @@ document.body.addEventListener('mouseup', onMouseUp, false);
 document.body.addEventListener('dblclick', onMouseDblClk, false);
 ```
 
-[See complete example](https://github.com/vboluda/3d-lab/tree/master/globe3d/example/example.html "Graph3D example")
+[See complete example](https://github.com/vboluda/3d-lab/tree/master/globe3d/example/example.html "Globe3d example")
 
 License
 ========

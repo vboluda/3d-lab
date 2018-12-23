@@ -60,7 +60,7 @@ element.addEventListener('resize', onWindowResize, false);
 element.addEventListener('mousemove', onMouseMove, false);
 ```
 
-[See complete example](https://github.com/vboluda/3d-lab/blob/master/earth3d/example/example.html "Graph3D example")
+[See complete example](https://github.com/vboluda/3d-lab/blob/master/earth3d/example/example.html "Earth3d example")
 
 License
 ========

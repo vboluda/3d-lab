@@ -4,12 +4,12 @@ Glob3d
 
 Screenshot
 ==========
-![Screenshot](https://github.com/vboluda/3d-lab/blob/master/graph3d/example/resources/globe3d.jpg)
+![Screenshot](https://github.com/vboluda/3d-lab/blob/master/globe3d/example/resources/globe3d.jpg)
 
 Example
 =======
 * [DEMO](https://htmlpreview.github.io/?https://github.com/vboluda/3d-lab/blob/master/globe3d/example/example.html "Graph3D demo")
-* [SOURCE](https://github.com/vboluda/3d-lab/tree/master/globe3d/lib "Globe3d source")
+* [SOURCE](https://github.com/vboluda/3d-lab/tree/master/globe3d/lib/Globe3d.js "Globe3d source")
 
 
 Usage

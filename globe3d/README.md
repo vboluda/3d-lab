@@ -18,7 +18,7 @@ Usage
 ```
 var globe = new Globe3d({
     onSelectBox:function(dataprovider,px,py){
-        return showLabel(dataprovider,px,py);
+        return <<show information>>
     }
 });
 ```

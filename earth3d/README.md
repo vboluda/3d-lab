@@ -1,10 +1,70 @@
-3D-LAB
+EARTH3D
 =======
-3D Graphical experiments based on [Threejs](https://threejs.org/ "Threejs link"
+3D Graphical visualization based on [Threejs](https://threejs.org/ "Threejs link") for geolocalized data
 
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+Screenshot
+==========
+![Screenshot](https://github.com/vboluda/3d-lab/blob/master/earth3d/example/resources/Screenshot.jpg)
 
+Example
+=======
+* [DEMO](https://vboluda.github.io/earth3d/example/example.html "EARTH3D demo")
+* [SOURCE](https://github.com/vboluda/3d-lab/blob/master/earth3d/lib/earth3d.js "Earth3d source")
+
+
+Usage
+=====
+* First, instance Earth3d object
+```
+var spr = new GeoPosition({ 
+                domElement: element,
+                showStats: true,
+                texture:'resources/world_black.jpg',
+                onSelectBox: function (dataProvider) {
+                    return showText([
+                        'IP: ' + dataProvider.ip,
+                        'Num Access: ' + dataProvider.accesos,
+                        'Country: ' + dataProvider.country,
+                        'City: ' + dataProvider.city
+                    ],{         
+                        fontsize: 12,
+                        borderThickness: 0,
+                        borderColor: {r: 0, g: 100, b: 160, a: 1},
+                        backgroundColor: {r: 151, g: 182, b: 204, a: 0.7}
+                    });
+                }
+            }); 
+```
+
+* Initialize with data
+```
+ spr.init(data);
+```
+
+* Create auxiliary functions and events
+```
+function animate() {
+    requestAnimationFrame(animate);
+    gr.render();
+    gr.update();
+}
+
+function onWindowResize(event) {
+    spr.onWindowResize(event);
+}
+
+function onMouseMove(event) {
+    spr.onMouseMove(event);
+}
+element.addEventListener('resize', onWindowResize, false);
+element.addEventListener('mousemove', onMouseMove, false);
+```
+
+[See complete example](https://github.com/vboluda/3d-lab/blob/master/earth3d/example/example.html "Earth3d example")
+
+License
+========
+MIT License
 
 Donation
 ========

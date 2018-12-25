@@ -4,7 +4,7 @@ COLLISION EXAMPLE
 
 Screenshot
 ==========
-![Screenshot](https://github.com/vboluda/3d-lab/blob/master/collisionexample/resources/Screenshot.jpg)
+![Screenshot](https://github.com/vboluda/3d-lab/blob/master/collisionexample/resources/collisionexample.jpg)
 
 Example
 =======

@@ -4,4 +4,4 @@
 
 [See home page...](https://vboluda.github.io/ "redirection")
 
-![Screenshot](https://github.com/vboluda/3d-lab/blob/master/Screenshots4x4.jpg)
+![Screenshot](https://github.com/vboluda/3d-lab/blob/master/Screenshots4x4.jpg) 

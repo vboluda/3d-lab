@@ -2,4 +2,4 @@
 =======
 3D Graphical experiments based on [Threejs](https://threejs.org/ "Threejs link")
 
-[SOURCE](https://vboluda.github.io/ "See home page...")
+[See home page...](https://vboluda.github.io/ "redirection")

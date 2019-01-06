@@ -8,7 +8,7 @@ Screenshot
 
 Example
 =======
-* [DEMO](https://htmlpreview.github.io/?https://github.com/vboluda/3d-lab/blob/master/graph3d/example/example.html "Graph3D demo")
+* [DEMO](https://vboluda.github.io/graph3d/example/example.html "Graph3D demo")
 * [SOURCE](https://github.com/vboluda/3d-lab/tree/master/graph3d/lib "Graph3D source")
 
 

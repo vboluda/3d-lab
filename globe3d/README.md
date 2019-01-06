@@ -8,7 +8,7 @@ Screenshot
 
 Example
 =======
-* [DEMO](https://htmlpreview.github.io/?https://github.com/vboluda/3d-lab/blob/master/globe3d/example/example.html "Graph3D demo")
+* [DEMO](https://vboluda.github.io/globe3d/example/example.html "Graph3D demo")
 * [SOURCE](https://github.com/vboluda/3d-lab/tree/master/globe3d/lib/Globe3d.js "Globe3d source")
 
 
